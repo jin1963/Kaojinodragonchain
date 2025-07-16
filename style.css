@@ -17,9 +17,9 @@ header {
 
 /* โลโก้ใหญ่ขึ้น */
 .logo {
-  width: 150px;
+  width: 170px;
   height: auto;
-  margin-bottom: 7px;
+  margin-bottom: 5px;
 }
 
 /* ปุ่ม Connect */
@@ -55,9 +55,9 @@ header {
 
 /* โลโก้เหรียญ */
 .token-logo {
-  width: 100px;
-  height: 80px;
-  margin-bottom: 10px;
+  width: 170px;
+  height: 100px;
+  margin-bottom: 6px;
 }
 
 /* ปุ่ม Action ต่างๆ */
