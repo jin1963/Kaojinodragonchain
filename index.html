@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KDC Wallet</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+</head>
+<body>
+  <header>
+    <img src="kdc.png" alt="KDC Logo" class="logo" />
+    <h1>KDC Wallet</h1>
+    <button id="connectWallet">Connect Wallet</button>
+    <p id="walletAddress">Not connected</p>
+  </header>
+
+  <section class="token-list">
+    <div class="token">
+      <img src="token_logo-1.png" alt="KJC Logo" class="token-logo" />
+      <h2>KJC</h2>
+      <p>Balance: <span id="kjcBalance">-</span></p>
+    </div>
+
+    <div class="token">
+      <img src="token_logo_2.png" alt="G3X24 Logo" class="token-logo" />
+      <h2>G3X24</h2>
+      <p>Balance: <span id="g3x24Balance">-</span></p>
+    </div>
+
+    <div class="token">
+      <img src="token_logo_3.png" alt="LYDIA Logo" class="token-logo" />
+      <h2>LYDIA</h2>
+      <p>Balance: <span id="lydiaBalance">-</span></p>
+    </div>
+  </section>
+
+  <section class="actions">
+    <button>Send</button>
+    <button>Receive</button>
+    <button>Swap</button>
+    <button>Stake</button>
+    <button onclick="window.open('https://bscscan.com/address/0xd479ae350dc24168e8db863c5413c35fb2044ecd')">Explorer</button>
+  </section>
+
+  <section class="add-token-buttons">
+    <h3>Add Tokens to Wallet</h3>
+    <button onclick="addToken('KJC', 'KJC', 18, 'token_logo-1.png', '0xd479ae350dc24168e8db863c5413c35fb2044ecd')">Add KJC</button>
+    <button onclick="addToken('G3X24', 'G3X24', 18, 'token_logo_2.png', '0x6cfD8Fe423F20F94825b5edB1E94068fBea19dC9')">Add G3X24</button>
+    <button onclick="addToken('LYDIA', 'LYDIA', 18, 'token_logo_3.png', '0x0fa662697d93Eb024f411E416f681EA7FECFcF96')">Add LYDIA</button>
+  </section>
+
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
